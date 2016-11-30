@@ -1,0 +1,79 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-align-justify"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Philosophy</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+	<div class="col-xs-0 col-sm-2 col-lg-3">
+	</div>
+	<div class="col-xs-12 col-sm-8 col-lg-6">
+		<div class="panel panel-default">
+	  		<div class="panel-body">
+	  			<h1>Company<br>Web Development</h1>
+	  			<br>
+	  			<br>
+				<%= video_tag "Movie.mp4", :width => "100%", :muted => true, :controls => false, :autoplay => true, :loop => true %>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+	<div class="col-xs-0 col-sm-2 col-lg-3">
+	</div>
+	<div class="col-xs-12 col-sm-8 col-lg-6">
+		<div class="panel panel-default">
+	  		<div class="panel-body">
+	  			<div class="text-justify times">
+	  				<h3>Philosophy.</h3>
+	  				<p>
+	  					[company] is a Sydney-based boutique design studio specialising in small scale web development. Our focus is on quality of user experience rather than a quantity of features to achieve an end product that is both affordable and aesthetic. We build using Ruby on Rails - a powerful framework that supports websites such as Airbnb, Hulu, and Basecamp.
+	  				</p>
+	  			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-0 col-sm-2 col-lg-3">
+	</div>
+	<div class="col-xs-12 col-sm-8 col-lg-6">
+		<div class="panel panel-default">
+	  		<div class="panel-body">
+	  			<div class="text-justify times">
+	  				<br>
+	  				<br>
+	  				<h3>Contact.</h3>
+	  					<br>
+	  					<%= render '/layouts/new_form' %>
+	  			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">Copyright &copy 2016 Company</p>
+	</div>
+</footer>

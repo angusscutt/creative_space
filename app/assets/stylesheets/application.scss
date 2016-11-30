@@ -1,0 +1,204 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	margin: 15px 15px 15px 15px;
+}
+
+h1 {
+	font-weight: 100;
+	text-align: center;
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 25px;
+	font-weight: 100;
+}
+
+p {
+	font-weight: 100;
+	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.panel-default {
+	border: none;
+	box-shadow: none;
+}
+
+.panel-body {
+	padding: 0;
+}
+
+.vert {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.twenty {
+	font-size: 34px;
+	text-shadow: 0px 0px 20px #000000;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.1s;
+-moz-animation-delay: 0.1s;
+animation-delay: 0.1s;
+}
+
+.hover08 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover08 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: .3s ease-out;
+}
+
+span {
+	width: 100%;
+	height: 100%;
+}
+
+span.text-content {
+  color: white;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+span.text-content span {
+  display: table-cell;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0;
+  	&:hover {
+  		opacity: 1;
+  	}
+}
+
+.states {
+	margin-top: 30%;
+}
+
+.states ul {
+	text-align: center;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.states ul li {
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.back {
+	bottom: 0;
+	margin: 120px auto auto 42%;
+}
+
+.back button {
+	font-weight: 300;
+}
+
+.max {
+	height: 100%;
+}
+
+.grey {
+	background-color: #eeeeee
+}
+
+.vidcont {
+	width: 100%;
+	height: 100%;
+	margin: 50px 50px 50px 50px;
+}
+
+.navbar {
+	background-color: white;
+	box-shadow: none;
+}
+
+.navbar-default {
+	border: none;
+}
+
+.dropdown-menu {
+	border-radius: 0px;
+}
+
+.times {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-weight: 100;
+}
+
+.times p {
+	font-size: 16px;
+	text-align: justify;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.footer .container p {
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.container {
+	border-top: 1px solid #cccccc;
+}
+
+.maxw {
+	max-width: 100%;
+	min-width: 100%;
+}
